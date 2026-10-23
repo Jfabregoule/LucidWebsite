@@ -1,0 +1,77 @@
+:root {
+  --bg: #0f1020;
+  --surface: #181a33;
+  --text: #e8e6f0;
+  --muted: #a3a1b8;
+  --accent: #b69cff;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+}
+
+a { color: var(--accent); }
+
+header, main, footer {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+header .logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-decoration: none;
+  color: var(--text);
+}
+
+nav a { margin-left: 16px; text-decoration: none; }
+
+.hero {
+  text-align: center;
+  padding: 64px 0;
+}
+
+.hero h1 {
+  font-size: clamp(2.5rem, 10vw, 4.5rem);
+  letter-spacing: 0.2em;
+  margin: 0 0 8px;
+}
+
+.hero p { color: var(--muted); font-size: 1.15rem; margin: 0; }
+
+.card {
+  background: var(--surface);
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.card h2 { margin-top: 0; }
+
+.policy h2 { margin-top: 32px; font-size: 1.2rem; }
+.policy .updated { color: var(--muted); }
+.policy hr { border: 0; border-top: 1px solid var(--surface); margin: 48px 0; }
+
+footer {
+  color: var(--muted);
+  font-size: 0.9rem;
+  text-align: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
